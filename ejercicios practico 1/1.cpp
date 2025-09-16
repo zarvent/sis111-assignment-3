@@ -2,10 +2,14 @@
 1. Leer N números y mostrar el promedio de los múltiplos de 4 y la suma de los múltiplos de 5.
 */
 
+
 #include <iostream>
 using namespace std;
 
+
 int main(){
+
+
     // Inicializar variables
     int sumaMultiplosDe4 = 0;
     int contadorMultiplosDe4 = 0;
@@ -13,9 +17,8 @@ int main(){
 
     int sumaMultiplosDe5 = 0;
 
+
     int numerosACalcular = 0;
-
-
     cout << "introduce los numeros a calcular \n";
     cin >> numerosACalcular;
 
@@ -25,11 +28,13 @@ int main(){
         cout << "Introduce el numero " << (i+1) << ": ";
         cin >> numero;
 
+
         // verificar si es multiplo de 4
         if(numero % 4 == 0){
             sumaMultiplosDe4 += numero;
             ++contadorMultiplosDe4;
         }
+
 
         // verifica si es multiplo de 5
         if(numero % 5 == 0){
@@ -47,7 +52,5 @@ int main(){
 
 
     cout << "\n La suma de los multiplos de 5 es:" << sumaMultiplosDe5 << endl;
-
-
     return 0;
 }
